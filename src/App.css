@@ -1,38 +1,335 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  font-size: 45px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
+  width: 100vw;
+  text-align: center;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #252a34;
+  height: 15vh;
+}
+.app-logo img{
+  width: 5vw;
+}
+
+.form input{
+  width: 60vw;
+  height: 5vh;
+  border-radius: 30px;
+  background-color: #3c465a;
+  border: none;
+  margin-top: 20px;
+ 
+}
+.form input::placeholder{
+  color: black;
+  padding-left: 20px;
+  font-size: 17px;
+}
+.nav{
+  display: flex;
+  background-color: #252a34;
+  width: 100vw;
+  
+}
+.nav ul{
+  display: flex;
+}
+.nav ul li {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  margin: 10px;
+  margin-left: 20px;
+}
+.nav ul li a{
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.home{
+  background-color: #252a34;
+  width: 100vw;
+  align-items: center;
+  height: 130vh;
+  margin-top: -30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.home img{
+  padding-top: 100px;
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-left: 25vw;
 }
+.home h1{
+  
+  color: #f6f7f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.8rem;
+}
+.home p{
+  color: #f6f7f9;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+.home .btn1{
+  height: 7vh;
+  width: 10vw;
+  border-radius: 30px;
+  background-color: rgb(32, 146, 178);
+  color: #f6f7f9;
+  border: none;
+  font-size: 18px;
+}
+.home .btn2{
+  height: 7vh;
+  width: 10vw;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #f6f7f9;
+  border: 1px solid gray;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.container{
+  background-color: #252a34;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  margin-top: 20px;
+  
+  
+}
+.sidebar li{
+ margin: 20px;
+  list-style: none;
+}
+.sidebar li a{
+  color: #f6f7f9;
+  text-decoration: none;
+}
+.content{
+  width: 60vw;
+  color: #f6f7f9;
+}
+.content h1{
+  margin-top: 20px;
+}
+.content h3{
+  margin-top: 20px;
+}
+.content p{
+  margin-top: 15px;
+  font-size: 18px;
+}
+.content img{
+  width: 50vw;
+  margin-top: 30px;
+  border-radius: 15px;
+}
+.sub-content{
+  background-color: #343a46;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 30vh;
+  width: 50vw;
+  border-radius: 15px;
+  border: 1px solid rgb(110, 110, 110);
+}
+.sub-content h2{
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.sub-content li{
+  margin: 10px;
+}
+.quick{
+  height: 90vh;
+}
+.tut{
+  height: 100vh;
+}
+.tut h1{
+  font-size: 35px;
+}
+.sub-tut{
+  width: 50vw;
+  height: 30vh;
+  background-color: #2b6e6233;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+.sub-tut i{
+  margin-top: 35px;
+  margin-left: 40px;
+  font-size: 35px;
+  color: #44ac99;
+}
+.sub-tut span{
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #44ac99;
+}
+.sub-tut p{
+  margin-left: 25px;
+  
+}
+.sub-tut .blu{
+  color: rgb(16, 234, 234);
+  font-size: 20px;
+  margin-left: 20px;
+ 
+}
+.tut li{
+  margin-top: 20px;
+  font-size: 17px;
+}
+ .blue{
+  color: rgb(35, 135, 236) ;
+}
+.think p{
+  margin-top: 30px;
+}
+.think h2{
+  margin-top: 30px;
+}
+.install{
+  height: 100vh;
+}
+.install h1{
+  font-size: 2.5rem;
+}
+.install h3{
+  margin-top: 10px;
+}
+.sub-install{
+  margin-top: 20px;
+  width: 50vw;
+  height: 26vh;
+  background-color: #3c465a;
+}
+.sub-install h2{
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.sub-install li{
+  margin: 10px;
+  margin-left: 10px;
+}
+.describe h1{
+  font-size: 2.5rem;
+}
+.describe h3{
+  margin-top: 10px;
+}
+.sub-describe{
+  margin-top: 20px;
+  width: 50vw;
+  height: 35vh;
+  background-color: #3c465a;
+}
+.sub-describe h2{
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.sub-describe li{
+  margin: 10px;
+  margin-left: 10px;
+}
+.hook h4{
+  margin-top: 10px;
+  font-size: 20px;
+}
+.hook li{
+  margin: 10px;
+}
+.component h2{
+  margin-top: 10px;
+}
+.component li{
+  margin: 10px;
+}
+.component h4{
+  margin-top: 5px;
+}
+.conference{
+  height: 90vh;
+}
+.comm{
+  height: 90vh;
+}
+.conference h3{
+  margin-top: 20px;
+}
+.conference h2{
+  margin-top: 20px;
+}
+.conference p{
+  margin-top: 20px;
+}
+.blog{
+  background-color: #252a34;
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+  height: 120vh;
+}
+.blog p{
+  margin-top: 20px;
+  font-size: 18px;
+}
+.blog-content{
+  width: 80%;
+  margin-left: 25%;
+  text-align: start;
+}
+.blog-box{
+  width: 67%;
+  margin-top: 30px;
+  border: 1px solid gray;
+  padding-left: 25px;
+ margin-bottom: 30px;
+ padding-bottom: 20px;
+ border-radius: 30px;
+}
+.blog-box h2{
+  margin-top: 10px;
+}
+.blog-box p{
+  color: gray;
+  margin-bottom: 10px;
+}
+.blog-box h3{
+  font-weight: 400;
+}
+
+
